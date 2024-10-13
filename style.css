@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap');
+
+/* General Styling */
+body {
+    font-family: 'Mochiy Pop One', sans-serif;
+}
+
+.tasklist-gradient {
+    background: linear-gradient(135deg, #89f7fe, #66a6ff); /* Soft blue gradient */
+}
+
+.tasklist-card {
+    background-color: rgba(255, 255, 255, 0.9); /* Light background for contrast */
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Lighter shadow */
+}
+
+.tasklist-body {
+    color: #333; /* Darker text for contrast */
+}
+
+.tasklist-header {
+    margin-bottom: 30px;
+}
+
+.tasklist-logo {
+    width: 60px;
+}
+
+.tasklist-title {
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: #004085; /* Deep blue for titles */
+}
+
+.tasklist-table {
+    color: #333; /*Darker table text */
+}
+
+/* Table Row Styling */
+.tasklist-row {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1); /* Lighter row separators */
+}
+
+.tasklist-avatar {
+    width: 45px;
+    border-radius: 50%;
+}
+
+.tasklist-member {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #333;
+}
+
+.tasklist-task {
+    font-size: 1.1rem;
+    color: #333;
+}
+
+/* Priority Badges */
+.high-priority {
+    background-color: #ff6b6b !important; /* Softer red */
+}
+
+.low-priority {
+    background-color: #1dd1a1 !important; /* Soft green */
+}
+
+.middle-priority {
+    background-color: #feca57 !important; /* Soft yellow */
+}
+
+/* Actions Styling */
+.tasklist-actions i {
+    color: #ff6b6b important;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.tasklist-actions i:hover {
+    color: #ff9f43; /* Hover effect with orange tint */
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .tasklist-card {
+        padding: 20px;
+    }
+    
+    .tasklist-title {
+        font-size: 1.8rem;
+    }
+    
+    .tasklist-avatar {
+        width: 35px;
+    }
+}
