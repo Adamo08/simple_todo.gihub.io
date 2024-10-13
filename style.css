@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap');
 
-/* General Styling */
+
 /* General Styling */
 body {
     font-family: 'Mochiy Pop One', sans-serif;
-    font-size: clamp(1rem, 1vw + 0.5rem, 1.5rem);
+    font-size: clamp(0.5rem, 1vw + 0.5rem, 1rem);
     line-height: 1.6;
 }
 
@@ -26,13 +26,13 @@ body {
 } 
 
 .tasklist-card {
-    background-color: rgba(255, 255, 255, 0.9); /* Light background for contrast */
+    background-color: rgba(255, 255, 255, 0.9);
     border-radius: 15px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Lighter shadow */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
 .tasklist-body {
-    color: #333; /* Darker text for contrast */
+    color: #333;
 }
 
 .tasklist-header {
@@ -54,22 +54,22 @@ table th {
 }
 
 .tasklist-table {
+    width:100%;
     color: #333; 
+    table-layout:auto;
 }
 
 /* Table Row Styling */
 .tasklist-row {
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1); /* Lighter row separators */
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .tasklist-member {
-    font-size: 1.1rem;
     font-weight: 600;
     color: #333;
 }
 
 .tasklist-task {
-    font-size: 1.1rem;
     color: #333;
 }
 
@@ -90,6 +90,35 @@ table th {
 .tasklist-actions i {
     cursor: pointer;
 }
+
+.task-info {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius:10px;
+    width:30%;
+    padding:10px 20px;
+    /* height:150px; */
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+.task-info .task-info-badge {
+    padding:5px;
+    color: #FFF;
+    border-radius:5px;
+    margin-top:10px;
+}
+.task-info .canceled{
+    background-color: #ff6b6b;
+}
+.task-info .completed{
+    background-color: #1dd1a1;
+}
+.task-info .total{
+    background-color: #004085;
+}
+
+
 
 /* Mobile Responsiveness */
 @media (max-width: 768px) {
