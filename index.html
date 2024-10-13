@@ -16,15 +16,18 @@
     <title>CodeAlpha ToDo</title>
 </head>
 <body>
-    <section class="vh-100 tasklist-gradient">
-        <div class="container py-5 h-100">
-            <div class="row d-flex justify-content-center align-items-center h-100">
+    <section class="tasklist-gradient">
+        <div class="container py-5">
+            <div class="row d-flex justify-content-center align-items-center">
                 <div class="col-md-12 col-xl-10">
-                    <div class="card tasklist-card">
+                    <div class="card tasklist-card position-relative">
+                        <button class="add-task">Add New</button>
                         <div class="card-body p-4 tasklist-body text-white">
                             <div class="text-center pt-3 pb-2 tasklist-header">
-                                <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-todo-list/check1.webp"
-                                alt="Check" class="tasklist-logo">
+                                <img 
+                                    src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-todo-list/check1.webp"
+                                    alt="Check" class="tasklist-logo"
+                                >
                                 <h2 class="my-4 tasklist-title">Task List</h2>
                             </div>
     
@@ -40,8 +43,6 @@
                                 <tbody>
                                     <tr class="fw-normal tasklist-row">
                                         <th>
-                                            <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava1-bg.webp"
-                                            alt="avatar 1" class="tasklist-avatar">
                                             <span class="ms-2 tasklist-member">Alice Mayer</span>
                                         </th>
                                         <td class="align-middle">
@@ -51,10 +52,15 @@
                                             <h6 class="mb-0"><span class="badge high-priority">High priority</span></h6>
                                         </td>
                                         <td class="align-middle tasklist-actions">
-                                            <a href="#!" data-mdb-tooltip-init title="Done"><i
-                                            class="fas fa-check fa-lg text-success me-3"></i></a>
-                                            <a href="#!" data-mdb-tooltip-init title="Remove"><i
-                                            class="fas fa-trash-alt fa-lg text-warning"></i></a>
+                                            <a data-mdb-tooltip-init title="Done">
+                                                <i class="fas fa-check fa-lg text-success me-3"></i>
+                                                </a>
+                                            <a  data-mdb-tooltip-init title="Remove">
+                                                <i class="fas fa-trash-alt fa-lg text-danger me-3"></i>
+                                            </a>
+                                            <a data-mdb-tooltip-init title="Update">
+                                                <i class="fas fa-edit fa-lg text-primary"></i>
+                                            </a>
                                         </td>
                                     </tr>
                                     <!-- More task rows as needed -->
