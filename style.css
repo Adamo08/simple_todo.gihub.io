@@ -1,8 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap');
 
 /* General Styling */
+/* General Styling */
 body {
     font-family: 'Mochiy Pop One', sans-serif;
+    font-size: clamp(1rem, 1vw + 0.5rem, 1.5rem);
+    line-height: 1.6;
 }
 
 /* Add Task Button */
