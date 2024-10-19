@@ -31,60 +31,44 @@
                                 <h2 class="my-4 tasklist-title">Task List</h2>
                             </div>
     
-                            <table class="table text-white mb-0 tasklist-table">
-                                <thead>
-                                    <tr>
-                                        <th scope="col">Team Member</th>
-                                        <th scope="col">Task</th>
-                                        <th scope="col">Priority</th>
-                                        <th scope="col">Actions</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr class="fw-normal tasklist-row">
-                                        <th>
-                                            <span class="ms-2 tasklist-member">Alice Mayer</span>
-                                        </th>
-                                        <td class="align-middle">
-                                            <span class="tasklist-task">Call Sam For payments</span>
-                                        </td>
-                                        <td class="align-middle">
-                                            <h6 class="mb-0"><span class="badge high-priority">High priority</span></h6>
-                                        </td>
-                                        <td class="align-middle tasklist-actions">
-                                            <a data-mdb-tooltip-init title="Done">
-                                                <i class="fas fa-check fa-lg text-success me-3"></i>
-                                                </a>
-                                            <a  data-mdb-tooltip-init title="Remove">
-                                                <i class="fas fa-trash-alt fa-lg text-danger me-3"></i>
-                                            </a>
-                                            <a data-mdb-tooltip-init title="Update">
-                                                <i class="fas fa-edit fa-lg text-primary"></i>
-                                            </a>
-                                        </td>
-                                    </tr>
-                                    <!-- More task rows as needed -->
-                                </tbody>
-                            </table>
+                            <div class="tasklist-table-container">
+                                <table class="table mb-0 tasklist-table">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Team Member</th>
+                                            <th scope="col">Task</th>
+                                            <th scope="col">Priority</th>
+                                            <th scope="col">Actions</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                    </tbody>
+                                </table>
+                            </div>
+                            
                         </div>
                     </div>
                     <div class="py-5 px-3 row d-flex flex-direction-row justify-content-between align-items-center">
                         <div class="task-info">
                             <div>Total Taks :</div>
-                            <div class="task-info-badge total">12</div>
+                            <div class="task-info-badge total">0</div>
                         </div>
                         <div class="task-info">
                             <div>Completed :</div>
-                            <div class="task-info-badge completed">12</div>
+                            <div class="task-info-badge completed">0</div>
                         </div>
                         <div class="task-info">
                             <div>Canceled :</div>
-                            <div class="task-info-badge canceled">12</div>
+                            <div class="task-info-badge canceled">0</div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>    
+
+
+
+    <script src="./app.js"></script>
 </body>
 </html>
