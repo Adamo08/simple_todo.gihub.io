@@ -38,7 +38,8 @@ Make sure you have a modern web browser to run this application.
 2. Navigate to the project directory:
 
    ```bash
-   cd codealpha_todo.github.io```
+   cd codealpha_todo.github.io
+   ```
 
 3. Open `index.html` in your web browser.
 
