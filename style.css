@@ -1,11 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap');
 
 
+
 /* General Styling */
 body {
     font-family: 'Mochiy Pop One', sans-serif;
     font-size: clamp(0.5rem, 1vw + 0.5rem, 1rem);
     line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
 }
 
 /* Add Task Button */
@@ -23,6 +27,9 @@ body {
 
 .tasklist-gradient {
     background: linear-gradient(135deg, #89f7fe, #66a6ff);
+    width: 100%;
+    min-height: 100vh;
+    overflow-x: hidden; 
 } 
 
 .tasklist-card {
@@ -49,14 +56,22 @@ body {
     color: #004085;
 }
 
-table th {
-    color: #004085;;
+
+.tasklist-table-container {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    color: #333;
+    table-layout: auto;
+    border-spacing: 0;
+    border-collapse: collapse;
 }
 
 .tasklist-table {
-    width:100%;
-    color: #333; 
-    table-layout:auto;
+    min-width: 600px; 
+    table-layout: fixed;
 }
 
 /* Table Row Styling */
@@ -96,7 +111,6 @@ table th {
     border-radius:10px;
     width:30%;
     padding:10px 20px;
-    /* height:150px; */
     display:flex;
     flex-direction:column;
     justify-content:center;
@@ -118,16 +132,70 @@ table th {
     background-color: #004085;
 }
 
-
-
 /* Mobile Responsiveness */
 @media (max-width: 768px) {
     .tasklist-card {
         padding: 20px;
     }
-    
+
     .tasklist-title {
         font-size: 1.8rem;
     }
-    
+
+    .tasklist-header img {
+        width: 50px;
+    }
+
+    .task-info {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .add-task {
+        padding: 7px 15px;
+        font-size: 0.9rem;
+    }
+
+    .tasklist-row {
+        font-size: 0.85rem;
+    }
+
+    .tasklist-table-container {
+        overflow-x: auto; 
+    }
+
+    .tasklist-table {
+        min-width: 600px;
+        table-layout: fixed;
+    }
+}
+
+/* Styling for very small screens */
+@media (max-width: 500px) {
+    .tasklist-card {
+        padding: 10px;
+    }
+
+    .tasklist-title {
+        font-size: 1.6rem;
+    }
+
+    .add-task {
+        font-size: 0.75rem;
+    }
+
+    .task-info {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 5px;
+    }
+
+    .tasklist-table-container {
+        overflow-x: auto; 
+    }
+
+    .tasklist-table {
+        min-width: 500px; 
+        table-layout: fixed;
+    }
 }
