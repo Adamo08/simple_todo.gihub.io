@@ -128,74 +128,42 @@ document.addEventListener("DOMContentLoaded", function () {
         updateTaskCount();
     }
 
-    // // Remove a task
-    // function removeTask(e) {
-    //     const row = e.target.closest("tr");
-
-    //     // Confirm task removal with SweetAlert
-    //     Swal.fire({
-    //         title: 'Are you sure?',
-    //         text: "You won't be able to revert this!",
-    //         icon: 'warning',
-    //         showCancelButton: true,
-    //         confirmButtonColor: '#3085d6',
-    //         cancelButtonColor: '#d33',
-    //         confirmButtonText: 'Yes, delete it!'
-    //     }).then((result) => {
-    //         if (result.isConfirmed) {
-    //             row.remove();
-    //             totalTasks--;
-    //             canceledTasks++;
-    //             updateTaskCount();
-
-    //             // Show success alert when task is removed
-    //             Swal.fire({
-    //                 icon: 'success',
-    //                 title: 'Deleted!',
-    //                 text: 'The task has been removed.',
-    //                 showConfirmButton: false,
-    //                 timer: 2000
-    //             });
-    //         }
-    //     });
-    // }
-
     // Remove a task
-function removeTask(e) {
-    const row = e.target.closest("tr");
+    function removeTask(e) {
+        const row = e.target.closest("tr");
 
-    // Check if the task is marked as completed before removing
-    if (row.classList.contains("completed")) {
-        completedTasks--;  // Decrement completed tasks count if the task is completed
-    }
-
-    // Confirm task removal with SweetAlert
-    Swal.fire({
-        title: 'Are you sure?',
-        text: "You won't be able to revert this!",
-        icon: 'warning',
-        showCancelButton: true,
-        confirmButtonColor: '#3085d6',
-        cancelButtonColor: '#d33',
-        confirmButtonText: 'Yes, delete it!'
-    }).then((result) => {
-        if (result.isConfirmed) {
-            row.remove();
-            totalTasks--;
-            canceledTasks++;
-            updateTaskCount();
-
-            // Show success alert when task is removed
-            Swal.fire({
-                icon: 'success',
-                title: 'Deleted!',
-                text: 'The task has been removed.',
-                showConfirmButton: false,
-                timer: 2000
-            });
+        // Check if the task is marked as completed before removing
+        if (row.classList.contains("completed")) {
+            completedTasks--;  // Decrement completed tasks count if the task is completed
         }
-    });
-}
+
+        // Confirm task removal with SweetAlert
+        Swal.fire({
+            title: 'Are you sure?',
+            text: "You won't be able to revert this!",
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'Yes, delete it!'
+        }).then((result) => {
+            if (result.isConfirmed) {
+                row.remove();
+                totalTasks--;
+                canceledTasks++;
+                updateTaskCount();
+
+                // Show success alert when task is removed
+                Swal.fire({
+                    icon: 'success',
+                    title: 'Deleted!',
+                    text: 'The task has been removed.',
+                    showConfirmButton: false,
+                    timer: 2000
+                });
+            }
+        });
+    }
 
 
     // Update a task
