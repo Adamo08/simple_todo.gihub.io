@@ -61,3 +61,4 @@ Contributions are welcome! If you'd like to contribute to this project, please f
 - [Bootstrap](https://getbootstrap.com/) for the responsive design framework.
 - [Font Awesome](https://fontawesome.com/) for the icons.
 - [SweetAlert2](https://sweetalert2.github.io/) for beautiful alerts.
+- [Google Fonts](https://fonts.googleapis.com/) for the custom font styling.
