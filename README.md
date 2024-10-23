@@ -32,7 +32,7 @@ Make sure you have a modern web browser to run this application.
 1. Clone the repository to your local machine using:
 
    ```bash
-   git clone https://github.com/adamo08/https://github.com/Adamo08/codealpha_todo.github.io.git
+   git clone https://github.com/Adamo08/codealpha_todo.github.io.git
    ```
 
 2. Navigate to the project directory:
