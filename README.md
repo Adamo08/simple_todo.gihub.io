@@ -1,4 +1,4 @@
-# CodeAlpha ToDo List
+# Simple ToDo List
 
 A simple and responsive ToDo list application built with HTML, CSS, and JavaScript. This project allows users to add, update, mark, and remove tasks while keeping track of total, completed, and canceled tasks.
 
@@ -32,13 +32,13 @@ Make sure you have a modern web browser to run this application.
 1. Clone the repository to your local machine using:
 
    ```bash
-   git clone https://github.com/Adamo08/codealpha_todo.github.io.git
+   git clone https://github.com/Adamo08/simple_todo.github.io.git
    ```
 
 2. Navigate to the project directory:
 
    ```bash
-   cd codealpha_todo.github.io
+   cd simple_todo.github.io
    ```
 
 3. Open `index.html` in your web browser.
